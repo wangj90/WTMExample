@@ -1,0 +1,16 @@
+﻿@model SchoolManagement.ViewModels.MajorVMs.MajorVM
+
+<wt:form vm="@Model">
+<wt:row items-per-row="ItemsPerRowEnum.Two">
+<wt:textbox field="Entity.MajorCode" />
+<wt:textbox field="Entity.MajorName" />
+<wt:textbox field="Entity.Remark" />
+<wt:combobox field="Entity.SchoolId" items="AllSchools"/>
+<wt:checkbox field="SelectedStudentMajorsIDs" items="AllStudentMajorss"/>
+</wt:row>
+    <wt:hidden field="Entity.ID" />
+    <wt:row align="AlignEnum.Right">
+        <wt:submitbutton />
+        <wt:closebutton />
+    </wt:row>
+</wt:form>

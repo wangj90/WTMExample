@@ -1,0 +1,15 @@
+﻿@model SchoolManagement.ViewModels.StudentVMs.StudentVM
+
+<wt:form vm="@Model">
+<wt:row items-per-row="ItemsPerRowEnum.Two">
+<wt:display field="Entity.Name" />
+<wt:display field="Entity.CellPhone" />
+<wt:display field="Entity.ZipCode" />
+<wt:display field="Entity.EnRollDate" />
+<wt:display field="Entity.PhotoId" />
+
+</wt:row>
+    <wt:row align=" AlignEnum.Right">
+        <wt:closebutton />
+    </wt:row>
+</wt:form>

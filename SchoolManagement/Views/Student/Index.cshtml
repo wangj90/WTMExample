@@ -1,0 +1,12 @@
+﻿@model SchoolManagement.ViewModels.StudentVMs.StudentListVM
+
+<wt:searchpanel vm="@Model" reset-btn="true">
+<wt:row items-per-row="ItemsPerRowEnum.Three">
+<wt:textbox field="Searcher.Name" />
+<wt:textbox field="Searcher.CellPhone" />
+<wt:textbox field="Searcher.ZipCode" />
+<wt:datetime field="Searcher.EnRollDate" />
+<wt:combobox field="Searcher.SelectedStudentMajorIDs" items="Searcher.AllStudentMajors" empty-text="全部" />
+</wt:row>
+</wt:searchpanel>
+<wt:grid vm="@Model" />
